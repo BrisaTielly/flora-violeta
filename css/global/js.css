@@ -1,0 +1,80 @@
+.js .js-text section {
+  display: none;
+}
+
+.js-faq-dl dd.ativo {
+  display: block;
+  animation: slidedown 0.5s forwards;
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+
+.js-faq-dl dt {
+  cursor: pointer;
+}
+
+.js-faq-dl dt::after {
+  content: "⮧";
+  margin-left: 10px;
+}
+
+.js-faq-dl dt.ativo::after {
+  content: "⮥";
+  margin-left: 10px;
+}
+
+.js-text section.ativo {
+  display: block !important;
+}
+
+.js-text section.ativo.show-left {
+  display: block !important;
+  animation: show-left 0.3s forwards;
+}
+
+.js-text section.ativo.show-down {
+  display: block !important;
+  animation: show-down 0.3s forwards;
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transition: 0.3s;
+}

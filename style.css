@@ -1,0 +1,18 @@
+/*GLOBAL */
+@import url(./css/global/global.css);
+
+/* HOME */
+@import url(./css/home/header.css);
+@import url(./css/home/introducao.css);
+@import url(./css/home/faq.css);
+@import url(./css/home/contato.css);
+@import url(./css/home/footer.css);
+
+/* Tipografia */
+@import url(./css/global/tipografia.css);
+@import url(./css/global/js.css);
+
+@import url(./css/global/modal.css);
+@import url(./css/global/tooltip.css);
+@import url(./css/global/dropdown.css);
+@import url(./css/global/menu-mobile.css);

@@ -1,0 +1,45 @@
+body {
+  background-color: #fcf4ff;
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body,
+ul,
+h2,
+h3,
+h1,
+p,
+dt,
+dl,
+dd {
+  padding: 0px;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  padding: 10px;
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  gap: 20px;
+}

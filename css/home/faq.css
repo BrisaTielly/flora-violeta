@@ -1,0 +1,41 @@
+.faq {
+  margin-bottom: 78px;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq dl {
+  grid-column: 2/5;
+}
+
+.faq dd {
+  margin-bottom: 32px;
+  margin-left: 30px;
+}
+
+.js .faq dd {
+  display: none;
+}
+
+.faq dt {
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.faq dt::before {
+  content: "";
+  width: 20px;
+  height: 10px;
+  background-color: #d0acdd;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+  .faq h2,
+  .faq dl {
+    grid-column: 1/3;
+  }
+}

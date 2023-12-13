@@ -1,0 +1,38 @@
+.contato {
+  margin-bottom: 80px;
+}
+
+.contato h2 {
+  margin-bottom: 24px;
+}
+
+.contato-img {
+  grid-column: 2;
+}
+
+.contato-ul li {
+  margin-bottom: 16px;
+}
+
+.contato-ul li::before {
+  content: "";
+  width: 20px;
+  height: 10px;
+  background-color: #d0acdd;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+  .contato-img {
+    grid-column: 1/5;
+    justify-self: center;
+    margin-bottom: 10px;
+  }
+  .contato-img img {
+    max-width: 100%;
+  }
+  .contato-ul {
+    grid-column: 1/3;
+  }
+}
